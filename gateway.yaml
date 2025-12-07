@@ -1,5 +1,5 @@
 server:
-  port: 8083   # O el puerto que uses para el Gateway
+  port: 8083   
 
 spring:
   cloud:
@@ -25,13 +25,6 @@ spring:
               uri: lb://invoice
               predicates:
                 - Path=/invoice/**
-              filters:
-                - StripPrefix=1
-
-            - id: auth-service
-              uri: lb://servicio-autenticacion
-              predicates:
-                - Path=/auth/**
               filters:
                 - StripPrefix=1
 
