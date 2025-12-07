@@ -12,9 +12,10 @@ spring:
   application:
     name: servicio-autenticacion
   datasource:
-    url: jdbc:mysql://localhost:3306/dwb
-    password: Hola$123., 
-    username: carlos 
+    url: jdbc:mysql://localhost:3306/DB_Syrion
+    password: GaSQL.
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     open-in-view: false
     show-sql: true
