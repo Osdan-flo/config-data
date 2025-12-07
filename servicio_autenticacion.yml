@@ -33,4 +33,20 @@ springdoc:
     packagesToScan: com.unam.dwb.auth.controller
     pathsToMatch: /**
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,loggers,threaddump,heapdump
+  endpoint:
+    health:
+      show-details: always
     
