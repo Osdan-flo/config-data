@@ -1,5 +1,5 @@
 server:
-  port: 8080   # O el puerto que uses para el Gateway
+  port: 8083   # O el puerto que uses para el Gateway
 
 spring:
   cloud:
